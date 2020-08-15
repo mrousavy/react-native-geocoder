@@ -82,7 +82,7 @@ RCT_EXPORT_METHOD(geocodeAddress:(NSString *)address
   for (int i = 0; i < placemarks.count; i++) {
     CLPlacemark* placemark = [placemarks objectAtIndex:i];
 
-    NSString* name = [NSNull null];
+    NSObject *name = nil;
 
     if (![placemark.name isEqualToString:placemark.locality] &&
         ![placemark.name isEqualToString:placemark.thoroughfare] &&
@@ -95,7 +95,7 @@ RCT_EXPORT_METHOD(geocodeAddress:(NSString *)address
     NSArray *lines = placemark.addressDictionary[@"FormattedAddressLines"];
 
     NSDictionary *result = @{
-     @"feature": name,
+     @"feature": name ?: NSNull.null,
      @"position": @{
          @"lat": [NSNumber numberWithDouble:placemark.location.coordinate.latitude],
          @"lng": [NSNumber numberWithDouble:placemark.location.coordinate.longitude],

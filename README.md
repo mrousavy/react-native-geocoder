@@ -7,69 +7,16 @@
 
 geocoding services for react native
 
-
-## Version table
-| Geocoder Version | RN        |
-| ------- |:----------|
-| >=0.5.0   | >= 0.47.0 |
-| >=0.4.6   | >= 0.40.0 |
-| <0.4.5   | <0.40.0   |
-
-
-
 ## Install
-```
-npm install --save react-native-geocoder
-```
-## iOS
 
-1. In the XCode's "Project navigator", right click on Libraries folder under your project ➜ `Add Files to <...>`
-2. Go to `node_modules` ➜ `react-native-geocoder` and add `ios/RNGeocoder.xcodeproj` file
-3. Add libRNGeocoder.a to "Build Phases" -> "Link Binary With Libraries"
-
-## Android
-1. In `android/setting.gradle`
-
-```gradle
-...
-include ':react-native-geocoder', ':app'
-project(':react-native-geocoder').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-geocoder/android')
-```
-
-3. In `android/app/build.gradle`
-
-```gradle
-...
-dependencies {
-    ...
-    compile project(':react-native-geocoder')
-}
-```
-
-4. register module (in MainApplication.java)
-
-```java
-import com.devfd.RNGeocoder.RNGeocoderPackage; // <--- import
-
-public class MainActivity extends ReactActivity {
-  ......
-
-  @Override
-  protected List<ReactPackage> getPackages() {
-    return Arrays.<ReactPackage>asList(
-            new MainReactPackage(),
-            new RNGeocoderPackage()); // <------ add this
-  }
-
-  ......
-
-}
-
+```sh
+npm i react-native-geocoder-mrousavy
+cd ios; pod install; cd ..
 ```
 
 ## Usage
 ```
-import Geocoder from 'react-native-geocoder';
+import Geocoder from 'react-native-geocoder-mrousavy';
 
 // Position Geocoding
 var NY = {

@@ -21,7 +21,7 @@ npm install ../../$NPM_PACKAGE > /dev/null
 rm -rf ../../$NPM_PACKAGE
 
 echo "Prepare android"
-rnpm link react-native-geocoder
+rnpm link react-native-geocoder-mrousavy
 
 echo "Prepare JS app"
 cp ../js/index.android.js .

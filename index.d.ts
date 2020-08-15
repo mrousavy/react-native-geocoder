@@ -1,4 +1,4 @@
-declare module 'react-native-geocoder' {
+declare module 'react-native-geocoder-mrousavy' {
 	export interface Position {
 		lat: number;
 		lng: number;

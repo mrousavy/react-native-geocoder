@@ -41,7 +41,7 @@ driverCaps = process.env['SAUCE_RUN'] ? driverCaps :
     app: 'http://localhost:8080/e2e/GeocoderE2EApp/android/app/build/outputs/apk/app-debug.apk',
   };
 
-describe ('react-native-geocoder', function() {
+describe ('react-native-geocoder-mrousavy', function() {
   this.timeout(60000000);
 
   const driver = wd.promiseChainRemote(driverConfig);

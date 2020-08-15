@@ -14,7 +14,7 @@ import {
   ScrollView,
 } from 'react-native';
 
-import Geocoder from 'react-native-geocoder';
+import Geocoder from 'react-native-geocoder-mrousavy';
 
 class GeocoderE2EApp extends Component {
   constructor(props) {

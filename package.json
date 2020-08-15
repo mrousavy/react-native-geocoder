@@ -1,6 +1,6 @@
 {
   "name": "react-native-geocoder-mrousavy",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "react native geocoding and reverse geocoding - forked and modified by mrousavy",
   "main": "index.js",
   "files": [

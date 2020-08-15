@@ -1,6 +1,7 @@
 # react-native-geocoder
 
 > TODO: Merge https://github.com/devfd/react-native-geocoder/pull/87 ?
+> TODO: Merge https://github.com/devfd/react-native-geocoder/pull/33 ?
 
 [![CircleCI](https://circleci.com/gh/devfd/react-native-geocoder/tree/master.svg?style=shield)](https://circleci.com/gh/devfd/react-native-geocoder/tree/master)
 

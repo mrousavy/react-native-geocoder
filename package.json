@@ -3,6 +3,19 @@
   "version": "0.5.0",
   "description": "react native geocoding and reverse geocoding - forked and modified by mrousavy",
   "main": "index.js",
+  "files": [
+    "README.md",
+    "android/src",
+    "android/build.gradle",
+    "ios/RNGeocoder.xcodeproj/project.pbxproj",
+    "ios/**/*.h",
+    "ios/**/*.m",
+    "ios/**/*.swift",
+    "index.js",
+    "index.d.ts",
+    "js",
+    "react-native-geocoder.podspec"
+  ],
   "scripts": {
     "test": "mocha --recursive --require test/setup.js --reporter dot test/unit "
   },
